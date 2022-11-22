@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registrasiya</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Registrasia</a>
+      <a href="/page2.html">Login</a>
+      <a href="/page3.html">Tizbeler</a>
+    </nav>
+    <main>
+
+      <title>Registration Form</title>
+
+      <style>
+        body {
+          padding: 24px;
+          display: grid;
+          place-content: center;
+        }
+  
+        label {
+          display: block;
+          padding-top: 16px;
+        }
+  
+        input {
+          width: unset;
+        }
+      </style>
+    </head>
+    <body>
+
+    <h1>Qazaqstan Respublikasynyñ Prezident Sailau Paraqşasy</h1>
+
+      <p>Berılgen formany toltyryñyz</p>
+      <form method="GET">
+
+        <fieldset>
+          <legend>Sailauşynyñ aty-jönı</legend>
+          <label for="username">Aty</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="atyñyzdy toltyryñyz"
+          />
+  
+          <label for="surname">Jönı</label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            required
+          />
+  
+          <label for="fathername">Tegı</label>
+          <input
+            type="text"
+            id="fathername"
+            name="fathername"
+          />
+        </fieldset>
+  
+        <fieldset>
+          <legend>Jynys</legend>
+  
+          <label for="male">Er</label>
+          <input type="radio" id="male" name="male" />
+  
+          <label for="female">Ayel</label>
+          <input type="radio" id="female" name="female" />
+
+          <label for="non-binary">Binarlı emes</label>
+          <input type="radio" id="non-binary" name="non-binary" />
+          
+        </fieldset>
+        
+        <fieldset>
+        
+        <legend>Jas</legend>
+          
+          <input
+            type="number"
+            id="number"
+            name="age"
+            step="1"
+            min="18"
+            max="120"
+        >
+        
+      </fieldset>
+     
+
+        <fieldset>
+          <legend>Qala</legend>
+          <select name="city">
+            <option value="aqt">Aqtobe</option>
+            <option value="alm">Almatı</option>
+            <option value="ast">Astana</option>
+            <option value="shym">Şymkent</option>
+            <option value="bsq">Basqa qala</option>
+          </select>
+        
+        </fieldset>
+      
+  
+        <fieldset>
+        <legend>Email & Paröl</legend>
+          <label for="email">Email</label>
+          <input type="email" id="email" required name="email" />
+
+          <label for="password">Paröl</label>
+          <input type="password" id="password" required name="password" />
+  
+        </fieldset>
+  
+        <fieldset>
+        <legend>Telefon nömery</legend>
+        <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{10}"
+       required>
+        </fieldset>
+
+        <fieldset>
+        <legend>Kün</legend>
+        <input type="date" id="date" name="date"
+       pattern="[0-9]{10}"
+       required>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Erejeler & Şarttar</legend>
+        <input type="checkbox" name="terms" id="terms" />
+      </fieldset>
+        <button>Submit <a href="./page2.html"></button>
+      </form>
+    </main>
+  </body>
+</html>
