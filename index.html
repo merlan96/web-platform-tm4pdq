@@ -36,7 +36,7 @@
     </head>
     <body>
 
-    <h1>Qazaqstan Respublikasynyñ Prezident Sailau Paraqşasy</h1>
+    <h1>Qazaqstan Respublikasy Prezidenti Sailau Paraqşasy</h1>
 
       <p>Berılgen formany toltyryñyz</p>
       <form method="GET">
@@ -48,7 +48,7 @@
             type="text"
             id="username"
             name="username"
-            required
+            
             placeholder="atyñyzdy toltyryñyz"
           />
   
@@ -57,7 +57,7 @@
             type="text"
             id="surname"
             name="surname"
-            required
+            
           />
   
           <label for="fathername">Tegı</label>
@@ -72,13 +72,13 @@
           <legend>Jynys</legend>
   
           <label for="male">Er</label>
-          <input type="radio" id="male" name="male" />
+          <input type="radio" id="male" name="jynys" />
   
           <label for="female">Ayel</label>
-          <input type="radio" id="female" name="female" />
+          <input type="radio" id="female" name="jynys" />
 
           <label for="non-binary">Binarlı emes</label>
-          <input type="radio" id="non-binary" name="non-binary" />
+          <input type="radio" id="non-binary" name="jynys" />
           
         </fieldset>
         
@@ -114,10 +114,10 @@
         <fieldset>
         <legend>Email & Paröl</legend>
           <label for="email">Email</label>
-          <input type="email" id="email" required name="email" />
+          <input type="email" id="email" name="email" />
 
           <label for="password">Paröl</label>
-          <input type="password" id="password" required name="password" />
+          <input type="password" id="password" name="password" />
   
         </fieldset>
   
@@ -125,21 +125,21 @@
         <legend>Telefon nömery</legend>
         <input type="tel" id="phone" name="phone"
        pattern="[0-9]{10}"
-       required>
+       >
         </fieldset>
 
         <fieldset>
         <legend>Kün</legend>
         <input type="date" id="date" name="date"
        pattern="[0-9]{10}"
-       required>
+       >
         </fieldset>
         
         <fieldset>
         <legend>Erejeler & Şarttar</legend>
         <input type="checkbox" name="terms" id="terms" />
       </fieldset>
-        <button>Submit <a href="./page2.html"></button>
+      <button><a href="/page2.html">Submit</button>
       </form>
     </main>
   </body>
