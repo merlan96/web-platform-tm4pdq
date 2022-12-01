@@ -44,3 +44,18 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+                        body {
+                          padding: 24px;
+                          display: grid;
+                          place-content: center;
+                        }
+
+                          label {
+                            display: block;
+                            padding-top: 16px;
+                          }
+
+                          input {
+                            width: unset;
+                        }
